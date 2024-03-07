@@ -92,19 +92,19 @@ public class EcomerseApiTest {
 
 
 		// Delete Product from api..
-
-		RequestSpecification deletebaseProdreq = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
-				.addHeader("Authorization", token).setContentType(ContentType.JSON)
-				.build();
-
-
-		RequestSpecification deleteOrderrequest = given().log().all().spec(deletebaseProdreq).pathParam("productId", productId);
-		 // store the response in the reference variable and then do some action which is required ...
-		Response DeleteOrderres = deleteOrderrequest.when().delete("/api/ecom/product/delete-product/{productId}").then().log().all().extract().response();
-
-
-		String stringDeleteResponse = DeleteOrderres.asString();
-		System.out.println(stringDeleteResponse);
+//
+//		RequestSpecification deletebaseProdreq = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
+//				.addHeader("Authorization", token).setContentType(ContentType.JSON)
+//				.build();
+//
+//
+//		RequestSpecification deleteOrderrequest = given().log().all().spec(deletebaseProdreq).pathParam("productId", productId);
+//		 // store the response in the reference variable and then do some action which is required ...
+//		Response DeleteOrderres = deleteOrderrequest.when().delete("/api/ecom/product/delete-product/{productId}").then().log().all().extract().response();
+//
+//
+//		String stringDeleteResponse = DeleteOrderres.asString();
+//		System.out.println(stringDeleteResponse);
 
 
 	}
