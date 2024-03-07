@@ -21,8 +21,8 @@ public class Comparison {
 
         ObjectMapper mapper = new ObjectMapper();
 
-      //  Assert.assertEquals(mapper.readTree(obj1.toJSONString()), mapper.readTree(obj2.toJSONString()));
-
         Assert.assertEquals(mapper.readTree(obj1.toJSONString()), mapper.readTree(obj2.toJSONString()));
+
+      //  Assert.assertEquals(mapper.readTree(obj1.toJSONString()), mapper.readTree(obj2.toJSONString()));
     }
 }
