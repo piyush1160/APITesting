@@ -20,6 +20,9 @@ public class Comparison {
         obj2 = (JSONObject) parser.parse(new FileReader("C:\\DummyTesting\\src\\test\\java\\files\\Json2.json"));
 
         ObjectMapper mapper = new ObjectMapper();
+
+      //  Assert.assertEquals(mapper.readTree(obj1.toJSONString()), mapper.readTree(obj2.toJSONString()));
+
         Assert.assertEquals(mapper.readTree(obj1.toJSONString()), mapper.readTree(obj2.toJSONString()));
     }
 }
